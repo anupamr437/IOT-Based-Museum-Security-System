@@ -35,8 +35,8 @@ servoD.write(0);
 servoE.write(180);
 digitalWrite(buzzerPin,LOW);
 Blynk.run();
-pirValue = digitalRead(04); // read the digital signal
-ldrValue = digitalRead(00); // read the digital signal
+pirValue = digitalRead(04); // read the digital signal from PIR sensor
+ldrValue = digitalRead(00); // read the digital signal from LDR
 Serial.print("pirvalue=");
 Serial.print(pirValue);
 Serial.print("    and    ldrvalue=");
