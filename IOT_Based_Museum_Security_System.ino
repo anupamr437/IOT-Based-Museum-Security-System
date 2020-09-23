@@ -1,10 +1,10 @@
 #define BLYNK_PRINT Serial
-#include <ESP8266WiFi.h>
-#include <BlynkSimpleEsp8266.h>
-#include<Servo.h>
-char auth[] = "1c777027bb32498c92ffbaca882f5688";
+#include <ESP8266WiFi.h> // It provides ESP8266 specific Wi-Fi routines that we are calling to connect to the network.
+#include <BlynkSimpleEsp8266.h> // It handles all the connection routines and data exchange between hardware, Blynk Cloud, and app.
+#include<Servo.h> //It provides commands to control servo motors.
+char auth[] = "1c777027bb32498c92ffbaca882f5688"; // Device Authentication Token to get the hardware online and connect it to Blynk Cloud
 const int pirsensor=04; //D2
-const int ldr=00; //D3
+const int ldr=00; // connect to pin D3 of NodeMCU development board, which connects to GPIO 00 of ESP8266 microcontroller.
 const int buzzerPin=02; //D4
 const int servo1=14; //D5
 const int servo2=12; //D6
