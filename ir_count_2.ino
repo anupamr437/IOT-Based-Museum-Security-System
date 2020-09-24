@@ -1,17 +1,14 @@
-int a=0;
-int b=0;
+int a=0; // a counts the no of people entering
+int b=0; // b counts the no of people exiting
 void setup() {
-  // put your setup code here, to run once:
-pinMode(D2,INPUT);
-pinMode(D3,INPUT);
-pinMode(D5,OUTPUT);
+pinMode(D2,INPUT); // connect Signal Out pin of Infrared Sensor at Entry to pin D2 of NodeMCU Development Board
+pinMode(D3,INPUT); // connect Signal Out pin of Infrared Sensor at Exit to pin D3 of NodeMCU Development Board
+pinMode(D5,OUTPUT); // connect LED positive terminal to D5 of NodeMCU Development Board
 Serial.begin(9600);
 }
 
 void loop() {  
-  // put your main code here, to run repeatedly:
-
-if(digitalRead(D2)==LOW)
+  if(digitalRead(D2)==LOW)
 {
   a++;
   Serial.print("entering=");
